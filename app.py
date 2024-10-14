@@ -15,7 +15,7 @@ def create_model():
     inputs = Input(shape=(210, 210, 1))
     x = Conv2D(32, (3, 3), activation='relu')(inputs)
     x = MaxPooling2D((2, 2))(x)
-    x = Conv2D(64, (3, 3), activation='relu')(x)
+    x = Conv2D(32, (3, 3), activation='relu')(x)
     x = MaxPooling2D((2, 2))(x)
     x = Conv2D(64, (3, 3), activation='relu')(x)
     x = Flatten()(x)
