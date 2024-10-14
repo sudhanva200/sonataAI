@@ -6,7 +6,10 @@ from tensorflow.keras.models import load_model
 import os
 
 app = Flask(__name__)
-CORS(app)
+
+# Configure CORS with specific origins
+ALLOWED_ORIGINS = ['https://renaissance0ne.github.io', 'http://localhost:3000']
+CORS(app, resources={r"/*": {"origins": ALLOWED_ORIGINS}})
 
 # Load the trained model
 model = load_model('trained_model.keras')
@@ -69,4 +72,4 @@ def predict():
     return jsonify({'error': 'Something went wrong'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
