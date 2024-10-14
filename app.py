@@ -15,11 +15,11 @@ def create_model():
     inputs = Input(shape=(210, 210, 1))
     x = Conv2D(32, (3, 3), activation='relu')(inputs)
     x = MaxPooling2D((2, 2))(x)
-    x = Conv2D(32, (3, 3), activation='relu')(x)
+    x = Conv2D(64, (3, 3), activation='relu')(x)
     x = MaxPooling2D((2, 2))(x)
     x = Conv2D(64, (3, 3), activation='relu')(x)
     x = Flatten()(x)
-    x = Dense(64, activation='relu')(x)
+    x = Dense(1200, activation='relu')(x)  # Changed to 1200 units
     outputs = Dense(10, activation='softmax')(x)
     
     model = Model(inputs=inputs, outputs=outputs)
