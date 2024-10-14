@@ -30,7 +30,9 @@ model = create_model()
 
 # Load the weights
 try:
-    model.load_weights('trained_model.keras')
+    # Update the path to the model file
+    model_path = os.path.join(os.environ['HOME'], 'site', 'wwwroot', 'trained_model.keras')
+    model.load_weights(model_path)
     print("Model weights loaded successfully.")
 except Exception as e:
     print(f"Error loading model weights: {str(e)}")
