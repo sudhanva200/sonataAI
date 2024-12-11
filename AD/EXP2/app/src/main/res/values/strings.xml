@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">exp2</string>
+    <string name="menu_options">Menu options</string>
+    <string name="phone">Phone</string>
+    <string name="sms">SMS</string>
+    <string name="website">Website</string>
+</resources>

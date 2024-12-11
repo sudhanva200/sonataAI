@@ -1,0 +1,5 @@
+What is Python? ||| Python is a high-level programming language.
+How to declare a variable in Python? ||| You can declare a variable in Python using the assignment operator (=).
+What are data types in Python? ||| Python has several built-in data types including integers, floats, strings, lists, tuples, dictionaries, and sets.
+What is indentation in Python? ||| Indentation in Python is used to define code blocks and is typically done using 4 spaces or a tab.
+How do you comment in Python? ||| Single-line comments start with # and multi-line comments are enclosed in triple quotes (''' or """).
